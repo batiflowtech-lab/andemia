@@ -10,14 +10,14 @@ const offerSections = [
         id: 'section-i',
         label: 'SECTION I',
         title: 'Packs créatifs & thématiques spéciaux',
-        intro: 'Des expériences fictives pensées pour des voyageurs en quête d'un séjour sur mesure, à la fois élégant et immersif.',
+        intro: 'Des expériences fictives pensées pour des voyageurs en quête d\'un séjour sur mesure, à la fois élégant et immersif.',
         theme: 'Photographie',
     },
     {
         id: 'section-ii',
         label: 'SECTION II',
         title: 'THE FASCINATING WORLD SERIE',
-        intro: 'Une série fictive d'itinéraires immersifs mêlant luxe, nature, culture et moments de pause raffinés.',
+        intro: 'Une série fictive d\'itinéraires immersifs mêlant luxe, nature, culture et moments de pause raffinés.',
         theme: 'Luxe',
     },
     {
@@ -52,7 +52,7 @@ const packs = [
             'Un circuit volontairement long, pensé pour la lumière, les textures, la faune rare et les compositions impossibles ailleurs.',
         highlights: [
             'Allée des Baobabs au lever et au coucher de soleil',
-            'Tsingy de Bemaraha, Isalo, Ranomafana, Montagne d'Ambre',
+            'Tsingy de Bemaraha, Isalo, Ranomafana, Montagne d\'Ambre',
             'Masoala et Nosy Be pour les paysages marins et forestiers',
         ],
         itinerary: [
@@ -60,8 +60,8 @@ const packs = [
             'J4-6 — Morondava à Tsingy de Bemaraha : lumière rasante, formations karstiques et sessions multiples',
             'J7-9 — Tsingy à Isalo : canyons sculptés, golden hour et photographie astro',
             'J10-12 — Isalo à Ranomafana : brume matinale, forêt tropicale humide et faune endémique',
-            'J13-14 — Ranomafana à Ambositra : artisanat Zafimaniry et portraits d'artisans',
-            'J15-16 — Tana à Montagne d'Ambre : macro, cascades et lumière filtrée',
+            'J13-14 — Ranomafana à Ambositra : artisanat Zafimaniry et portraits d\'artisans',
+            'J15-16 — Tana à Montagne d\'Ambre : macro, cascades et lumière filtrée',
             'J17-18 — Diego Suarez à Masoala : forêt primaire et pénétration de lumière sous canopée',
             'J19 — Tana à Nosy Be : lagons turquoise, coucher de soleil et sorties sous-marines',
         ],
@@ -73,7 +73,7 @@ const packs = [
         price: 'À partir de 6 800 €',
         duration: '12 jours',
         group: '4 à 8 personnes',
-        season: 'Toute l'année',
+        season: 'Toute l\'année',
         theme: 'Aventure',
         section: 'section-iii',
         image: '/images/landscape-poster.svg',
@@ -82,7 +82,7 @@ const packs = [
             'Un circuit intense et spectaculaire pour explorer les paysages les plus contrastés de Madagascar avec un rythme actif et un cadre premium.',
         highlights: [
             'Isalo, Anakao et routes de piste au cœur du sud',
-            'Escapades photographiques et moments d'aventure',
+            'Escapades photographiques et moments d\'aventure',
             'Accompagnement local et logistique optimisée',
         ],
         itinerary: [
@@ -99,13 +99,13 @@ const packs = [
         price: 'Sur devis',
         duration: '7 à 10 jours',
         group: '2 à 8 personnes',
-        season: 'Toute l'année',
+        season: 'Toute l\'année',
         theme: 'Luxe',
         section: 'section-ii',
         image: '/images/landscape-poster.svg',
         subtitle: 'Safari exclusif, luxe naturel et île privée',
         description:
-            'Un séjour haut de gamme pensé pour les voyageurs recherchant l'exclusivité, le confort et l'immersion dans l'un des plus beaux havres naturels de Madagascar.',
+            'Un séjour haut de gamme pensé pour les voyageurs recherchant l\'exclusivité, le confort et l\'immersion dans l\'un des plus beaux havres naturels de Madagascar.',
         highlights: [
             'Hébergement premium au cœur de la baie',
             'Activités nautiques et safaris privés',
@@ -124,7 +124,7 @@ const packs = [
         price: 'Sur devis',
         duration: '6 à 9 jours',
         group: '2 à 8 personnes',
-        season: 'Toute l'année',
+        season: 'Toute l\'année',
         theme: 'Luxe',
         section: 'section-ii',
         image: '/images/landscape-poster.jpg',
@@ -137,7 +137,7 @@ const packs = [
             'Transport premium et organisation fluide',
         ],
         itinerary: [
-            'Arrivée à Nosy Be ou à Sainte-Marie selon l'itinéraire',
+            'Arrivée à Nosy Be ou à Sainte-Marie selon l\'itinéraire',
             'Jours de détente, excursions marines et expériences privées',
             'Départ avec services de transfer premium',
         ],
@@ -149,13 +149,13 @@ const packs = [
         price: 'Sur devis',
         duration: '6 à 12 jours',
         group: '2 à 6 personnes',
-        season: 'Toute l'année',
+        season: 'Toute l\'année',
         theme: 'Honeymoon',
         section: 'section-iv',
         image: '/images/landscape-poster.svg',
         subtitle: 'Moments spéciaux, intimité et romance',
         description:
-            'Des séjours conçus pour célébrer un mariage, un anniversaire ou une étape de vie avec une touche de discrétion, de beauté et d'exclusivité.',
+            'Des séjours conçus pour célébrer un mariage, un anniversaire ou une étape de vie avec une touche de discrétion, de beauté et d\'exclusivité.',
         highlights: [
             'Séjours romantiques et privatisés',
             'Hébergement haut de gamme avec vues exceptionnelles',
@@ -199,7 +199,7 @@ const packs = [
         price: 'À partir de 10 200 €',
         duration: '9 jours',
         group: '2 à 4 personnes',
-        season: 'Toute l'année',
+        season: 'Toute l\'année',
         theme: 'Luxe',
         section: 'section-ii',
         image: '/images/landscape-poster.svg',
@@ -212,7 +212,7 @@ const packs = [
             'Cuisine raffinée',
         ],
         itinerary: [
-            'J1-3 — Installation sur l'île',
+            'J1-3 — Installation sur l\'île',
             'J4-6 — Excursions privées',
             'J7-9 — Détente finale',
         ],
@@ -230,7 +230,7 @@ const packs = [
         image: '/images/landscape-poster.jpg',
         subtitle: 'Un circuit fictif pour vivre les paysages les plus singuliers et les plus spectaculaires',
         description:
-            'Une aventure imaginaire au cœur d'un décor saisissant, entre dunes, vallées et étoiles.',
+            'Une aventure imaginaire au cœur d\'un décor saisissant, entre dunes, vallées et étoiles.',
         highlights: [
             'Randonnées guidées',
             'Camps premium',
@@ -249,13 +249,13 @@ const packs = [
         price: 'Sur devis',
         duration: '7 à 10 jours',
         group: '2 à 6 personnes',
-        season: 'Toute l'année',
+        season: 'Toute l\'année',
         theme: 'Honeymoon',
         section: 'section-iv',
         image: '/images/landscape-poster.svg',
         subtitle: 'Une escapade fictive romantique sous les étoiles et au rythme du calme',
         description:
-            'Un programme imaginaire conçu pour la douceur, la beauté du cadre et la sensation d'exception.',
+            'Un programme imaginaire conçu pour la douceur, la beauté du cadre et la sensation d\'exception.',
         highlights: [
             'Dîner privé',
             'Suite romantique',
