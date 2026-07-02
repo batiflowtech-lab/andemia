@@ -3,20 +3,21 @@ import { computed, ref } from 'vue';
 import GuestLayout from '@/Layouts/GuestLayout.vue';
 
 const selectedPack = ref(null);
+const selectedSection = ref('section-i');
 
 const offerSections = [
     {
         id: 'section-i',
         label: 'SECTION I',
         title: 'Packs créatifs & thématiques spéciaux',
-        intro: 'Des expériences fictives pensées pour des voyageurs en quête d’un séjour sur mesure, à la fois élégant et immersif.',
+        intro: 'Des expériences fictives pensées pour des voyageurs en quête d'un séjour sur mesure, à la fois élégant et immersif.',
         theme: 'Photographie',
     },
     {
         id: 'section-ii',
         label: 'SECTION II',
         title: 'THE FASCINATING WORLD SERIE',
-        intro: 'Une série fictive d’itinéraires immersifs mêlant luxe, nature, culture et moments de pause raffinés.',
+        intro: 'Une série fictive d'itinéraires immersifs mêlant luxe, nature, culture et moments de pause raffinés.',
         theme: 'Luxe',
     },
     {
@@ -51,7 +52,7 @@ const packs = [
             'Un circuit volontairement long, pensé pour la lumière, les textures, la faune rare et les compositions impossibles ailleurs.',
         highlights: [
             'Allée des Baobabs au lever et au coucher de soleil',
-            'Tsingy de Bemaraha, Isalo, Ranomafana, Montagne d’Ambre',
+            'Tsingy de Bemaraha, Isalo, Ranomafana, Montagne d'Ambre',
             'Masoala et Nosy Be pour les paysages marins et forestiers',
         ],
         itinerary: [
@@ -59,8 +60,8 @@ const packs = [
             'J4-6 — Morondava à Tsingy de Bemaraha : lumière rasante, formations karstiques et sessions multiples',
             'J7-9 — Tsingy à Isalo : canyons sculptés, golden hour et photographie astro',
             'J10-12 — Isalo à Ranomafana : brume matinale, forêt tropicale humide et faune endémique',
-            'J13-14 — Ranomafana à Ambositra : artisanat Zafimaniry et portraits d’artisans',
-            'J15-16 — Tana à Montagne d’Ambre : macro, cascades et lumière filtrée',
+            'J13-14 — Ranomafana à Ambositra : artisanat Zafimaniry et portraits d'artisans',
+            'J15-16 — Tana à Montagne d'Ambre : macro, cascades et lumière filtrée',
             'J17-18 — Diego Suarez à Masoala : forêt primaire et pénétration de lumière sous canopée',
             'J19 — Tana à Nosy Be : lagons turquoise, coucher de soleil et sorties sous-marines',
         ],
@@ -72,7 +73,7 @@ const packs = [
         price: 'À partir de 6 800 €',
         duration: '12 jours',
         group: '4 à 8 personnes',
-        season: 'Toute l’année',
+        season: 'Toute l'année',
         theme: 'Aventure',
         section: 'section-iii',
         image: '/images/landscape-poster.svg',
@@ -81,7 +82,7 @@ const packs = [
             'Un circuit intense et spectaculaire pour explorer les paysages les plus contrastés de Madagascar avec un rythme actif et un cadre premium.',
         highlights: [
             'Isalo, Anakao et routes de piste au cœur du sud',
-            'Escapades photographiques et moments d’aventure',
+            'Escapades photographiques et moments d'aventure',
             'Accompagnement local et logistique optimisée',
         ],
         itinerary: [
@@ -98,13 +99,13 @@ const packs = [
         price: 'Sur devis',
         duration: '7 à 10 jours',
         group: '2 à 8 personnes',
-        season: 'Toute l’année',
+        season: 'Toute l'année',
         theme: 'Luxe',
         section: 'section-ii',
         image: '/images/landscape-poster.svg',
         subtitle: 'Safari exclusif, luxe naturel et île privée',
         description:
-            'Un séjour haut de gamme pensé pour les voyageurs recherchant l’exclusivité, le confort et l’immersion dans l’un des plus beaux havres naturels de Madagascar.',
+            'Un séjour haut de gamme pensé pour les voyageurs recherchant l'exclusivité, le confort et l'immersion dans l'un des plus beaux havres naturels de Madagascar.',
         highlights: [
             'Hébergement premium au cœur de la baie',
             'Activités nautiques et safaris privés',
@@ -123,7 +124,7 @@ const packs = [
         price: 'Sur devis',
         duration: '6 à 9 jours',
         group: '2 à 8 personnes',
-        season: 'Toute l’année',
+        season: 'Toute l'année',
         theme: 'Luxe',
         section: 'section-ii',
         image: '/images/landscape-poster.jpg',
@@ -136,7 +137,7 @@ const packs = [
             'Transport premium et organisation fluide',
         ],
         itinerary: [
-            'Arrivée à Nosy Be ou à Sainte-Marie selon l’itinéraire',
+            'Arrivée à Nosy Be ou à Sainte-Marie selon l'itinéraire',
             'Jours de détente, excursions marines et expériences privées',
             'Départ avec services de transfer premium',
         ],
@@ -148,13 +149,13 @@ const packs = [
         price: 'Sur devis',
         duration: '6 à 12 jours',
         group: '2 à 6 personnes',
-        season: 'Toute l’année',
+        season: 'Toute l'année',
         theme: 'Honeymoon',
         section: 'section-iv',
         image: '/images/landscape-poster.svg',
         subtitle: 'Moments spéciaux, intimité et romance',
         description:
-            'Des séjours conçus pour célébrer un mariage, un anniversaire ou une étape de vie avec une touche de discrétion, de beauté et d’exclusivité.',
+            'Des séjours conçus pour célébrer un mariage, un anniversaire ou une étape de vie avec une touche de discrétion, de beauté et d'exclusivité.',
         highlights: [
             'Séjours romantiques et privatisés',
             'Hébergement haut de gamme avec vues exceptionnelles',
@@ -198,7 +199,7 @@ const packs = [
         price: 'À partir de 10 200 €',
         duration: '9 jours',
         group: '2 à 4 personnes',
-        season: 'Toute l’année',
+        season: 'Toute l'année',
         theme: 'Luxe',
         section: 'section-ii',
         image: '/images/landscape-poster.svg',
@@ -211,7 +212,7 @@ const packs = [
             'Cuisine raffinée',
         ],
         itinerary: [
-            'J1-3 — Installation sur l’île',
+            'J1-3 — Installation sur l'île',
             'J4-6 — Excursions privées',
             'J7-9 — Détente finale',
         ],
@@ -229,7 +230,7 @@ const packs = [
         image: '/images/landscape-poster.jpg',
         subtitle: 'Un circuit fictif pour vivre les paysages les plus singuliers et les plus spectaculaires',
         description:
-            'Une aventure imaginaire au cœur d’un décor saisissant, entre dunes, vallées et étoiles.',
+            'Une aventure imaginaire au cœur d'un décor saisissant, entre dunes, vallées et étoiles.',
         highlights: [
             'Randonnées guidées',
             'Camps premium',
@@ -248,13 +249,13 @@ const packs = [
         price: 'Sur devis',
         duration: '7 à 10 jours',
         group: '2 à 6 personnes',
-        season: 'Toute l’année',
+        season: 'Toute l'année',
         theme: 'Honeymoon',
         section: 'section-iv',
         image: '/images/landscape-poster.svg',
         subtitle: 'Une escapade fictive romantique sous les étoiles et au rythme du calme',
         description:
-            'Un programme imaginaire conçu pour la douceur, la beauté du cadre et la sensation d’exception.',
+            'Un programme imaginaire conçu pour la douceur, la beauté du cadre et la sensation d'exception.',
         highlights: [
             'Dîner privé',
             'Suite romantique',
@@ -276,8 +277,17 @@ const sectionsWithPacks = computed(() =>
     }))
 );
 
+const currentSection = computed(() =>
+    sectionsWithPacks.value.find((section) => section.id === selectedSection.value)
+);
+
 const openPackDetails = (pack) => {
     selectedPack.value = selectedPack.value?.title === pack.title ? null : pack;
+};
+
+const selectSection = (sectionId) => {
+    selectedSection.value = sectionId;
+    selectedPack.value = null;
 };
 </script>
 
@@ -296,7 +306,7 @@ const openPackDetails = (pack) => {
         <section id="overview" class="mx-auto max-w-6xl px-6 py-16">
             <div class="mb-8">
                 <p class="text-sm uppercase tracking-[0.3em] text-amber-600">Section I — Packs créatifs & thématiques spéciaux</p>
-                <h2 class="mt-2 text-3xl font-semibold text-slate-900">Expériences exclusives conçues autour d’une passion ou d’un moment de vie</h2>
+                <h2 class="mt-2 text-3xl font-semibold text-slate-900">Expériences exclusives conçues autour d'une passion ou d'un moment de vie</h2>
             </div>
 
             <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
@@ -329,88 +339,86 @@ const openPackDetails = (pack) => {
 
             <nav class="sticky top-20 z-20 mb-8 rounded-full border border-slate-200 bg-white/90 px-3 py-3 shadow-sm backdrop-blur">
                 <div class="flex flex-wrap justify-center gap-2">
-                    <a
+                    <button
                         v-for="section in sectionsWithPacks"
                         :key="section.id"
-                        :href="`#${section.id}`"
-                        class="rounded-full px-4 py-2 text-sm font-medium transition hover:bg-slate-100"
+                        @click="selectSection(section.id)"
+                        :class="[
+                            'rounded-full px-4 py-2 text-sm font-medium transition',
+                            selectedSection === section.id
+                                ? 'bg-amber-100 text-amber-900'
+                                : 'hover:bg-slate-100 text-slate-700'
+                        ]"
                     >
                         {{ section.label }}
-                    </a>
+                    </button>
                 </div>
             </nav>
 
-            <div class="space-y-12">
-                <section
-                    v-for="section in sectionsWithPacks"
-                    :id="section.id"
-                    :key="section.id"
-                    class="scroll-mt-28 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
-                >
-                    <div class="mb-6">
-                        <p class="text-sm uppercase tracking-[0.3em] text-amber-600">{{ section.label }}</p>
-                        <h3 class="mt-2 text-2xl font-semibold text-slate-900">{{ section.title }}</h3>
-                        <p class="mt-3 max-w-2xl text-slate-600">{{ section.intro }}</p>
-                    </div>
+            <div v-if="currentSection" class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                <div class="mb-6">
+                    <p class="text-sm uppercase tracking-[0.3em] text-amber-600">{{ currentSection.label }}</p>
+                    <h3 class="mt-2 text-2xl font-semibold text-slate-900">{{ currentSection.title }}</h3>
+                    <p class="mt-3 max-w-2xl text-slate-600">{{ currentSection.intro }}</p>
+                </div>
 
-                    <nav v-if="section.packs.length > 1" class="mb-6 flex flex-wrap gap-2 rounded-full border border-slate-200 bg-slate-50 px-3 py-3">
-                        <a
-                            v-for="pack in section.packs"
-                            :key="pack.id"
-                            :href="`#${pack.id}`"
-                            class="rounded-full px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-white hover:text-slate-900"
-                        >
-                            {{ pack.title }}
-                        </a>
-                    </nav>
+                <nav v-if="currentSection.packs.length > 1" class="mb-6 flex flex-wrap gap-2 rounded-full border border-slate-200 bg-slate-50 px-3 py-3">
+                    <a
+                        v-for="pack in currentSection.packs"
+                        :key="pack.id"
+                        :href="`#${pack.id}`"
+                        class="rounded-full px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-white hover:text-slate-900"
+                    >
+                        {{ pack.title }}
+                    </a>
+                </nav>
 
-                    <div class="grid gap-8 lg:grid-cols-2">
-                        <article
-                            v-for="pack in section.packs"
-                            :id="pack.id"
-                            :key="pack.title"
-                            class="group scroll-mt-28 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
-                        >
-                            <div class="overflow-hidden">
-                                <img :src="pack.image" :alt="pack.title" class="h-40 w-full object-cover transition duration-500 group-hover:scale-105" />
+                <div class="grid gap-8 lg:grid-cols-2">
+                    <article
+                        v-for="pack in currentSection.packs"
+                        :id="pack.id"
+                        :key="pack.title"
+                        class="group scroll-mt-28 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+                    >
+                        <div class="overflow-hidden">
+                            <img :src="pack.image" :alt="pack.title" class="h-40 w-full object-cover transition duration-500 group-hover:scale-105" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between gap-3">
+                                <h4 class="text-xl font-semibold text-slate-900">{{ pack.title }}</h4>
+                                <span class="rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">
+                                    {{ pack.theme }}
+                                </span>
                             </div>
-                            <div class="p-6">
-                                <div class="flex items-center justify-between gap-3">
-                                    <h4 class="text-xl font-semibold text-slate-900">{{ pack.title }}</h4>
-                                    <span class="rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">
-                                        {{ pack.theme }}
-                                    </span>
+                            <p class="mt-2 text-sm uppercase tracking-[0.2em] text-amber-600">
+                                {{ pack.price }} • {{ pack.duration }} • {{ pack.group }}
+                            </p>
+                            <p class="mt-2 text-sm text-slate-500">Saison : {{ pack.season }}</p>
+                            <p class="mt-4 text-slate-600">{{ pack.subtitle }}</p>
+                            <p class="mt-3 text-slate-600">{{ pack.description }}</p>
+
+                            <ul class="mt-4 space-y-2 text-sm text-slate-600">
+                                <li v-for="highlight in pack.highlights" :key="highlight">• {{ highlight }}</li>
+                            </ul>
+
+                            <button
+                                class="mt-6 rounded-full bg-slate-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-700"
+                                @click="openPackDetails(pack)"
+                            >
+                                {{ selectedPack?.title === pack.title ? 'Masquer les détails' : 'Voir les détails du pack' }}
+                            </button>
+
+                            <Transition name="details" appear>
+                                <div v-if="selectedPack?.title === pack.title" class="mt-6 rounded-2xl bg-slate-50 p-4">
+                                    <h4 class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-700">Itinéraire</h4>
+                                    <ul class="mt-3 space-y-2 text-sm text-slate-600">
+                                        <li v-for="step in pack.itinerary" :key="step">• {{ step }}</li>
+                                    </ul>
                                 </div>
-                                <p class="mt-2 text-sm uppercase tracking-[0.2em] text-amber-600">
-                                    {{ pack.price }} • {{ pack.duration }} • {{ pack.group }}
-                                </p>
-                                <p class="mt-2 text-sm text-slate-500">Saison : {{ pack.season }}</p>
-                                <p class="mt-4 text-slate-600">{{ pack.subtitle }}</p>
-                                <p class="mt-3 text-slate-600">{{ pack.description }}</p>
-
-                                <ul class="mt-4 space-y-2 text-sm text-slate-600">
-                                    <li v-for="highlight in pack.highlights" :key="highlight">• {{ highlight }}</li>
-                                </ul>
-
-                                <button
-                                    class="mt-6 rounded-full bg-slate-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-700"
-                                    @click="openPackDetails(pack)"
-                                >
-                                    {{ selectedPack?.title === pack.title ? 'Masquer les détails' : 'Voir les détails du pack' }}
-                                </button>
-
-                                <Transition name="details" appear>
-                                    <div v-if="selectedPack?.title === pack.title" class="mt-6 rounded-2xl bg-slate-50 p-4">
-                                        <h4 class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-700">Itinéraire</h4>
-                                        <ul class="mt-3 space-y-2 text-sm text-slate-600">
-                                            <li v-for="step in pack.itinerary" :key="step">• {{ step }}</li>
-                                        </ul>
-                                    </div>
-                                </Transition>
-                            </div>
-                        </article>
-                    </div>
-                </section>
+                            </Transition>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
@@ -420,11 +428,11 @@ const openPackDetails = (pack) => {
                 <div class="mt-8 grid gap-6 md:grid-cols-2">
                     <div>
                         <h3 class="text-lg font-semibold text-slate-900">01. Demande initiale</h3>
-                        <p class="mt-2 text-slate-600">Envoyez vos dates, le nombre de participants et vos centres d’intérêt par e-mail ou WhatsApp. Réponse sous 24h.</p>
+                        <p class="mt-2 text-slate-600">Envoyez vos dates, le nombre de participants et vos centres d'intérêt par e-mail ou WhatsApp. Réponse sous 24h.</p>
                     </div>
                     <div>
                         <h3 class="text-lg font-semibold text-slate-900">02. Questionnaire personnalisé</h3>
-                        <p class="mt-2 text-slate-600">Nous vous envoyons un questionnaire pour comprendre vos attentes profondes et affiner l’itinéraire.</p>
+                        <p class="mt-2 text-slate-600">Nous vous envoyons un questionnaire pour comprendre vos attentes profondes et affiner l'itinéraire.</p>
                     </div>
                     <div>
                         <h3 class="text-lg font-semibold text-slate-900">03. Cotation sur mesure</h3>
